@@ -1,2 +1,2 @@
 # Image-Gallery
-This is an image gallery exercise testing out pseudoclasses, transform and transition properties.
+An image gallery exercise testing out pseudoclasses, transform and transition properties.
