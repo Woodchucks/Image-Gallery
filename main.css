@@ -1,0 +1,97 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+body {
+   background-color: #ffe6ea;
+}
+
+h1 {
+  text-align: center;
+  font-family: Raleway;
+  color: #34495e;
+  letter-spacing: 4px;
+  padding-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+div.item {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  background: #000000;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+div.item * {
+  transition: all .3s 100ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+div.item img {
+  width: 100%;
+  vertical-align: top;
+  height: 320px;
+}
+
+div.item i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  font-size: 34px;
+  color: #000000;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: #ffffff;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 300ms 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+div.item a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+div.item.blue {
+  background-color: #34495e;
+}
+
+div.item.blue i {
+  color: #34495e;
+}
+
+div.item.red {
+  background-color: #e74c3c;
+}
+
+div.item.red i {
+  color: #e74c3c;
+}
+
+div.item.green {
+  background-color: #16a085;
+}
+div.item.green i {
+  color: #16a085;
+}
+
+div.item:hover img{
+  opacity: 0.3;
+  filter: greyscale(100%);
+}
+
+div.item:hover i {
+ transform: translate(-50%, -50%) scale(1); 
+}
